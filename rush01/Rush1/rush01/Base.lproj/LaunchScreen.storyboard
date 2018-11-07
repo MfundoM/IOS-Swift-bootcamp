@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="3TZ-y2-ABe">
+                                <rect key="frame" x="50" y="202" width="274" height="262"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WeThinkGPS_" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoE-VH-Sj7">
+                                <rect key="frame" x="50" y="173" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HTg-5j-o0F">
+                                <rect key="frame" x="50" y="472" width="274" height="21"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BoE-VH-Sj7" firstAttribute="trailing" secondItem="3TZ-y2-ABe" secondAttribute="trailing" id="3Mo-f3-lMj"/>
+                            <constraint firstItem="BoE-VH-Sj7" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="153" id="60l-G4-PLN"/>
+                            <constraint firstItem="BoE-VH-Sj7" firstAttribute="trailing" secondItem="HTg-5j-o0F" secondAttribute="trailing" id="9yQ-gE-TdU"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="3TZ-y2-ABe" secondAttribute="bottom" constant="203" id="BHE-Ee-pvi"/>
+                            <constraint firstItem="BoE-VH-Sj7" firstAttribute="leading" secondItem="3TZ-y2-ABe" secondAttribute="leading" id="FuJ-3i-Guo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3TZ-y2-ABe" secondAttribute="trailing" constant="35" id="K7A-mD-cYf"/>
+                            <constraint firstItem="3TZ-y2-ABe" firstAttribute="top" secondItem="BoE-VH-Sj7" secondAttribute="bottom" constant="8" symbolic="YES" id="KUt-h1-gTD"/>
+                            <constraint firstItem="HTg-5j-o0F" firstAttribute="top" secondItem="3TZ-y2-ABe" secondAttribute="bottom" constant="8" id="Kcq-wG-3hv"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="HTg-5j-o0F" secondAttribute="bottom" constant="174" id="Ki4-fL-0Dc"/>
+                            <constraint firstItem="3TZ-y2-ABe" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="182" id="YIY-aJ-UYC"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="HTg-5j-o0F" secondAttribute="trailing" id="aKQ-a9-90X"/>
+                            <constraint firstItem="3TZ-y2-ABe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="34" id="hKR-7M-dNo"/>
+                            <constraint firstItem="HTg-5j-o0F" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="34" id="pcW-hn-fM3"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="map" width="256" height="256"/>
+    </resources>
+</document>
